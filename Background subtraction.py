@@ -1,4 +1,4 @@
-# Remove the background frome a vedio 
+# Remove the background frame a vedio 
 
 import cv2
 import cvzone
