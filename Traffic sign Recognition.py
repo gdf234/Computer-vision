@@ -12,7 +12,8 @@ while True:
 
     for (x, y, w, h) in stop_sign_scaled:
         stop_sign_rectangle = cv2.rectangle(frame, (x,y), (x+w, y+h), (0,255,0), 2)
-        stop_sign_text = cv2.putText(stop_sign_rectangle,"stop sign"+str(stop_sign_scaled), (x,y-20), cv2.FONT_HERSHEY_SIMPLEX, 2, (255,0,0), 5)
+        stop_sign_text = cv2.putText(stop_sign_rectangle,"stop sign"+str(stop_sign_scaled), (x,y-20), 
+                                     cv2.FONT_HERSHEY_SIMPLEX, 2, (255,0,0), 5)
 
     cv2.imshow('traffic sign Recognition', frame)
    
